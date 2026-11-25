@@ -2,18 +2,18 @@
 
 ## X
 
-I built BlindSpot for @flydotio Hacksgiving. My local agent remembered a low-light failure and tested it first on another guitar. Low light passed. JPEG quality 4 turned the prediction into “violin” at 93.8%. Demo uses CC0 photos and local memory. [DEMO] [CODE]
+My classifier recognized a museum guitar until the lights dimmed. BlindSpot saved that failure in Pinecone on a live @flydotio Sprite and tried low light first on a second guitar. This one passed. See the replay https://blindspot-demo-b6wzw.sprites.app
 
 ## Bluesky
 
-At JPEG quality 4, my inventory classifier called a guitar a violin with a 93.8% score. BlindSpot found the failure, asked for a retake, and saved the evidence. Built for @flydotio Hacksgiving. Local demo with CC0 photos and LOCAL/MOCK memory. [DEMO] [CODE]
+JPEG compression fooled my classifier on a second museum guitar. My BlindSpot agent first tried low light because its live @flydotio Sprite recalled another guitar’s failure from Pinecone. This guitar kept its label until JPEG level 3. Explore the replay https://blindspot-demo-b6wzw.sprites.app
 
 ## LinkedIn
 
-I built BlindSpot for @flydotio Hacksgiving to answer a practical question about taking inventory photos. If a model recognizes an object on my camera, which change in lighting or image quality makes it lose the label?
+I built BlindSpot for @flydotio Hacksgiving to answer a question about inventory photos. When a classifier recognizes an object, which change in lighting or image quality makes it lose the label?
 
-In the local demo, one guitar lost its label under low light. The agent remembered the failure and tried low light first on another guitar. That photo held up. Heavy JPEG compression was the condition that changed its top prediction to violin at 93.8%, prompting a retake.
+Eleven of twelve museum photos already missed their labels in the original shot. One guitar passed, so BlindSpot tested it under different camera conditions. Low light caused an error. The live Sprite saved that failure through the Pinecone connector.
 
-The demo uses individually credited CC0 sample photographs, local ONNX inference and durable local failure memory. The Pinecone connector path and Sprite runbook are implemented. Live connector verification is pending.
+When I gave BlindSpot a different guitar, Pinecone recalled the failure and the agent moved low light ahead of its usual blur test. The second guitar passed both. At the strongest JPEG compression, the classifier confidently picked the wrong label.
 
-Demo [DEMO] · Code [CODE]
+[Explore the public sample replay](https://blindspot-demo-b6wzw.sprites.app) · [Read the code](https://github.com/damien15-5/blindspot)

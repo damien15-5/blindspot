@@ -3,13 +3,11 @@
 | Field | Draft |
 |---|---|
 | Name | Damien (XAVORIAN) |
-| Email | [DAMIEN_EMAIL] |
+| Email | xavorian01@gmail.com |
 | Agent name | BlindSpot |
 | Description | BlindSpot tests an inventory classifier against labels I supply, remembers which camera conditions break it, and chooses the next experiment. It saves the photo pairs, predictions and reason for each action, including when to ask for a retake. |
-| Connectors | Pinecone through the Sprites gateway for failure signatures. Optional Box gateway adapter for labelled image intake and report export. Current evidence verifies LOCAL/MOCK and simulated gateway responses. Replace this status only after the corresponding live checks pass. |
-| Code link | [PUBLIC_CODE_URL] |
-| Demo link | [PUBLIC_DEMO_URL] |
-| Social post link | [PUBLISHED_POST_URL] |
-| Notes for judges | Built November 25 during Hacksgiving week. The local sample replay shows a retrieved low-light failure changing test order, a preserved low-light prediction, and a JPEG-induced violin prediction at 93.84%. The owner can substitute personally labelled photos. The sample corpus is curated, and the agent uses a bounded deterministic policy and local CPU inference. Sprite deployment and authenticated connector proof are pending. |
-
-These answers are drafts. The event requires a running Sprite and a connector. Set the links and update verification status after those requirements are met. [Event rules](https://fly.io/hacksgiving/)
+| Connectors | The live Sprite saved and retrieved failure signatures through the Pinecone Sprites connector. The optional Box adapter supports labelled image intake and report export and has been tested with simulated responses. |
+| Code link | https://github.com/damien15-5/blindspot |
+| Demo link | https://blindspot-demo-b6wzw.sprites.app |
+| Social post link | [POST_LINK] |
+| Notes for judges | Open the public demo and select **Follow-up session** to inspect the packaged SAMPLE replay. In the live Sprite qualification run, Pinecone recalled a low-light failure on the first guitar and moved low light ahead of blur on the held-out guitar. The second guitar passed low light. At JPEG level 3 the classifier made a confident error. Starting experiments with your own labelled photos requires an unpublished owner token. Built November 25 during Hacksgiving week with curated museum photos, a bounded deterministic policy and CPU inference. |

@@ -2,11 +2,30 @@
 
 **Which camera condition makes my inventory classifier misidentify an object I own?** BlindSpot takes the owner’s label, runs a small vision model on the original photo, chooses a camera test, and uses the measured result to choose the next one. On a sample guitar, severe JPEG compression moved the top prediction from acoustic guitar to violin at 93.8%. The agent asked for a retake.
 
-Built by Damien (XAVORIAN) on November 25 during Fly.io Hacksgiving week. The working local edition includes a real CPU classifier, persistent experiments and two read-only SAMPLE replays. Sprite deployment and authenticated connector verification are pending. The 76-second captioned walkthrough uses the saved runs. [Walkthrough](evidence/walkthrough.mp4) · [Test results](TEST-RESULTS.md) · [Sprite runbook](DEPLOY.md)
+Built by Damien (XAVORIAN) on November 25 during Fly.io Hacksgiving week. [Open the public Sprite demo](https://blindspot-demo-b6wzw.sprites.app) and select **Sample collection** or **Follow-up session** to inspect the packaged SAMPLE replay. Starting a new experiment requires an unpublished owner token. [Source code](https://github.com/damien15-5/blindspot)
+
+The 76-second captioned walkthrough uses the saved runs. [Walkthrough](evidence/walkthrough.mp4) · [Test results](TEST-RESULTS.md) · [Sprite runbook](DEPLOY.md)
 
 ![BlindSpot showing the original guitar, its compressed variant and their top-five predictions](evidence/desktop.png)
 
-## Open the test bench
+## Live Pinecone verification
+
+On November 25, 2026 (WAT), the public Sprite returned HTTP 200 for an unauthenticated `GET /api/status`, with `memory: "Pinecone"` and `owner: false`. An unauthenticated `POST /api/samples` returned HTTP 403 with “Owner access required”.
+
+The Fly organization’s Pinecone connector holds the bring-your-own Starter key. Its policy sets `allow_all: false` and `sprite_labels: ["blindspot"]`. The `blindspot-demo` Sprite carries that label. From inside the Sprite, the gateway listed the ready `blindspot-memory` index (dense, 1,000 dimensions, cosine, AWS us-east-1).
+
+Both qualification runs used the Sprite service with `BLINDSPOT_MEMORY=pinecone`. The connector traces recorded these Pinecone POST requests.
+
+| Run | `/indexes/<index>/query` | `/indexes/<index>/vectors/upsert` |
+|---|---|---|
+| SAMPLE · `5eefca5287024149aa150ac503d092ac` | HTTP 200, 744 ms | HTTP 200, 848 ms |
+| FOLLOW-UP · `2d266cdb3b104cf78f7fbad83bb904b0` | HTTP 200, 493 ms | HTTP 200, 885 ms |
+
+Eleven of the twelve museum photos were baseline errors. The classifier recognized guitar 1918.374 in the original, blurred and rotated photos. Low light and JPEG each induced an error. BlindSpot saved the low-light failure in Pinecone.
+
+On held-out guitar 1918.370, the first decision after the original had reason code `RECALLED_FAILURE`. Pinecone recall moved low light ahead of the usual first test, blur. The classifier kept the guitar label through low light, blur, JPEG L1, colour cast and JPEG L2. JPEG L3 produced a confident error.
+
+## Run the test bench locally
 
 From this directory on Linux with Python 3.13, run the following commands. The compiled React interface and sample replays ship with the repository. The public model fetch verifies its pinned hashes and skips files already present.
 
