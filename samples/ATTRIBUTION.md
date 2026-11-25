@@ -1,6 +1,6 @@
 # SAMPLE photograph credits
 
-The Cleveland Museum of Art marks each record CC0. These collection photographs were resized and JPEG-encoded for this distribution. Labels are curator-selected from the pinned ImageNet vocabulary.
+The Cleveland Museum of Art marks each record CC0. These collection photographs were resized and JPEG-encoded for this distribution. Labels are project-selected from the pinned ImageNet vocabulary.
 
 | File | Museum record | Photo | Rights | Accepted ID |
 |---|---|---|---|---|
@@ -17,3 +17,5 @@ The Cleveland Museum of Art marks each record CC0. These collection photographs 
 | guitar-98679.jpg | [Guitar, 1918.374](https://www.clevelandart.org/art/1918.374) | [JPEG](https://openaccess-cdn.clevelandart.org/1918.374/1918.374_web.jpg) | [CC0 record](https://openaccess-api.clevelandart.org/api/artworks/98679) | 402 |
 | guitar-98675.jpg | [Guitar, 1918.370](https://www.clevelandart.org/art/1918.370) | [JPEG](https://openaccess-cdn.clevelandart.org/1918.370/1918.370_web.jpg) | [CC0 record](https://openaccess-api.clevelandart.org/api/artworks/98675) | 402 |
 | guitar-98635.jpg | [Guitar, 1918.336](https://www.clevelandart.org/art/1918.336) | [JPEG](https://openaccess-cdn.clevelandart.org/1918.336/1918.336_web.jpg) | [CC0 record](https://openaccess-api.clevelandart.org/api/artworks/98635) | 402 |
+
+The main SAMPLE run uses the twelve records in labels.json. The separate follow-up is guitar-98675.jpg (1918.370). It was absent from the main session and its failure memory. Guitars were screened while building the demo to include a correct baseline and an observable change in test order. These curated collection photographs differ from phone photographs of household items. Accession numbers identify the source objects. These labels were supplied for the demo by the project, independently of the classifier output.

@@ -1,4 +1,5 @@
 """Fetch public model bytes only after verifying their immutable digest."""
+
 import hashlib
 import json
 import urllib.request

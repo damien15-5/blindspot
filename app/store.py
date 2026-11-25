@@ -11,6 +11,8 @@ SCHEMA = """
 CREATE TABLE IF NOT EXISTS photos(
  id TEXT PRIMARY KEY, title TEXT, source_id TEXT, source_version TEXT, provenance TEXT,
  sha256 TEXT, accepted TEXT, original BLOB, UNIQUE(source_id,source_version,sha256));
+CREATE TABLE IF NOT EXISTS photo_intakes(photo_id TEXT, batch TEXT, PRIMARY KEY(photo_id,batch));
+CREATE TABLE IF NOT EXISTS run_intakes(run_id TEXT, batch TEXT, PRIMARY KEY(run_id,batch));
 CREATE TABLE IF NOT EXISTS runs(
  id TEXT PRIMARY KEY, goal TEXT, model_sha TEXT, preprocessing_sha TEXT, state TEXT,
  seed INTEGER, budget INTEGER, cursor INTEGER DEFAULT 0, created TEXT DEFAULT CURRENT_TIMESTAMP);
@@ -44,7 +46,7 @@ def data_dir():
 def database():
     directory = data_dir()
     directory.mkdir(parents=True, exist_ok=True)
-    con = sqlite3.connect(directory/"agent.sqlite", timeout=8)
+    con = sqlite3.connect(directory / "agent.sqlite", timeout=8)
     con.row_factory = sqlite3.Row
     try:
         con.executescript(SCHEMA)
@@ -60,17 +62,30 @@ def uid():
 
 
 def labels(values):
-    if not isinstance(values,list) or any(type(i) is not int or not 0<=i<1000 for i in values):
+    if not isinstance(values, list) or any(
+        type(i) is not int or not 0 <= i < 1000 for i in values
+    ):
         raise ValueError("Accepted class IDs must be integers from 0 through 999")
     return sorted(set(values))
 
 
 def photo(con, data, title, source, version, provenance, accepted):
-    if len(data)>2*1024**2:
+    if len(data) > 2 * 1024**2:
         raise ValueError("Photo exceeds 2 MiB")
     decode(data)
     digest = sha(data)
-    pid = sha(json.dumps([source,version,digest]).encode())[:32]
-    con.execute("INSERT OR IGNORE INTO photos VALUES(?,?,?,?,?,?,?,?)",
-                (pid,title,source,version,provenance,digest,json.dumps(labels(accepted)),data))
+    pid = sha(json.dumps([source, version, digest]).encode())[:32]
+    con.execute(
+        "INSERT OR IGNORE INTO photos VALUES(?,?,?,?,?,?,?,?)",
+        (
+            pid,
+            title,
+            source,
+            version,
+            provenance,
+            digest,
+            json.dumps(labels(accepted)),
+            data,
+        ),
+    )
     return pid

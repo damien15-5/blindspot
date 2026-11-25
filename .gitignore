@@ -8,3 +8,4 @@ reports/
 models/*.onnx
 *.pyc
 .env
+.ruff_cache/
