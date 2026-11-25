@@ -1,0 +1,10 @@
+.local/
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+data/
+reports/
+models/*.onnx
+*.pyc
+.env

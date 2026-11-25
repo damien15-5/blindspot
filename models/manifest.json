@@ -1,0 +1,9 @@
+{
+  "repo": "https://huggingface.co/onnx-community/mobilenetv4_conv_small.e2400_r224_in1k",
+  "revision": "3ba07f12712fa58fd6b3d661f9909c9e332c5005",
+  "files": {
+    "config.json": "ae99506e66f8e19bc73809e5b4c3ae31fc7c2bca53752dc7cb89c1e47831a335",
+    "preprocessor_config.json": "21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+    "onnx/model_quantized.onnx": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a"
+  }
+}
