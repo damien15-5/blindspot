@@ -1,7 +1,7 @@
 import hmac
 import json
-import logging
 import os
+from functools import lru_cache
 from typing import Annotated
 
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, UploadFile
@@ -15,7 +15,6 @@ from .store import database, labels, photo
 from .vision import LABELS, ROOT
 
 app = FastAPI(title="BlindSpot",docs_url=None,redoc_url=None,openapi_url=None)
-logging.getLogger("blindspot").setLevel(logging.INFO)
 
 
 def allowed(request):
@@ -117,9 +116,18 @@ class Step(BaseModel):
 @app.post("/api/runs/{rid}/step",dependencies=auth)
 def step(rid:str,body:Step):
     with database() as con:
-        agent.step(con,rid,body.cursor)
+        queued = agent.step(con,rid,body.cursor)
+    # The trial and outbox intent must survive a crash before a provider sees a write.
+    with database() as con:
+        if queued:
+            row = agent.lookup(con,"outbox",queued)
+            if row["status"]=="pending":
+                try:
+                    connectors.deliver(con,row)
+                except connectors.Unavailable:
+                    pass  # The durable intent and redacted trace remain inspectable.
         data = reports.report(con,rid)
-        if data["state"]=="done":
+        if data["state"]=="done" and not (reports.data_dir()/"reports"/rid/"report.html").exists():
             reports.save(con,rid)
         return data
 
@@ -135,15 +143,32 @@ def retry(rid:str):
         return reports.report(con,rid)
 
 
-@app.get("/api/runs/{rid}",dependencies=auth)
-@app.get("/api/report/{rid}",dependencies=auth)
-def get_report(rid:str):
+@lru_cache(maxsize=1)
+def sample_reports():
+    return [json.loads((ROOT/"demo"/(name+".json")).read_text()) for name in ("session","followup")]
+
+
+@app.get("/api/runs/{rid}")
+@app.get("/api/report/{rid}")
+def get_report(rid:str,request:Request):
+    if not allowed(request):
+        for data in sample_reports():
+            if data["id"]==rid:
+                return data
+        raise HTTPException(404,"Sample run not found")
     with database() as con:
         return reports.report(con,rid)
 
 
-@app.get("/api/trials/{tid}",dependencies=auth)
-def get_trial(tid:str):
+@app.get("/api/trials/{tid}")
+def get_trial(tid:str,request:Request):
+    if not allowed(request):
+        for data in sample_reports():
+            for p in data["photos"]:
+                for t in p["trials"]:
+                    if t["id"]==tid:
+                        return t
+        raise HTTPException(404,"Sample trial not found")
     with database() as con:
         row = agent.lookup(con,"trials",tid)
         data = reports.report(con,row["run_id"])

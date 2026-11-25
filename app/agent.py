@@ -92,6 +92,7 @@ def step(con, rid, expected):
     run = lookup(con,"runs",rid)
     if run["state"]!="active" or expected!=run["cursor"]:
         return
+    queued = None
     case = con.execute("SELECT * FROM cases WHERE run_id=? AND state NOT IN ('done','retake') ORDER BY position LIMIT 1",(rid,)).fetchone()
     pid = case["photo_id"]
     photo = lookup(con,"photos",pid)
@@ -139,10 +140,7 @@ def step(con, rid, expected):
                         metadata=dict(model=MODEL,owner=mem.OWNER,condition=condition,trial=tid,
                                       accepted=[str(i) for i in accepted],outcome=outcome))
             con.execute("INSERT INTO outbox VALUES(?,?,?,?,?,?)",(item["id"],rid,pid,mem.provider(),json.dumps(item),"pending"))
-            try:
-                mem.deliver(con,pending(con,rid,pid))
-            except mem.Unavailable:
-                decide("TEST","MEMORY_WRITE_PENDING",[tid])
+            queued = item["id"]
         if outcome=="confident error":
             decide("REQUEST_RETAKE","WRONG_TOP1_GE_070",[tid])
             state("retake")
@@ -152,6 +150,7 @@ def step(con, rid, expected):
 
     active = con.execute("SELECT 1 FROM cases WHERE run_id=? AND state NOT IN ('done','retake')",(rid,)).fetchone()
     con.execute("UPDATE runs SET cursor=cursor+1,state=? WHERE id=?",("active" if active else "done",rid))
+    return queued
 
 
 def relabel(con,pid,accepted):

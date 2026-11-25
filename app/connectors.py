@@ -29,7 +29,7 @@ def provider():
 def event(con, run, name, method, path, status, start):
     ms = (time.monotonic()-start)*1000
     con.execute("INSERT INTO connector_events VALUES(?,?,?,?,?,?)",(run,name,method,path,str(status),ms))
-    logging.getLogger("blindspot").info("%s %s %s %s %.2fms",name,method,path,status,ms)
+    logging.getLogger("uvicorn.error").info("%s %s %s %s %.2fms",name,method,path,status,ms)
 
 
 def gateway(con, run, service, method, path, redacted, **kwargs):

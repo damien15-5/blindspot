@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 from .connectors import Unavailable, gateway
-from .store import photo, uid
+from .store import photo, uid, labels
 
 LIMIT = 2*1024**2
 
@@ -52,7 +52,9 @@ def intake(con):
         source = "box:"+f["id"]
         cached = con.execute("SELECT original FROM photos WHERE source_id=? AND source_version=?",(source,version)).fetchone()
         data = cached[0] if cached else download(f,LIMIT)
-        result.append(photo(con,data,f["name"],source,version,"Owner · Box labels.json",item["accepted"]))
+        pid = photo(con,data,f["name"],source,version,"Owner · Box labels.json",item["accepted"])
+        con.execute("UPDATE photos SET accepted=? WHERE id=?", (json.dumps(labels(item["accepted"])), pid))
+        result.append(pid)
     return result
 
 
