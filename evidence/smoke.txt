@@ -1,0 +1,22 @@
+/workspace/flyio-hackathon/blindspot/.local/venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+SAMPLE SET 6f3c957474624b65bd20953bd90d5148 CPU ms 294.34
+1940.228 Teapot [('original', 0, 486, 'baseline error')]
+2022.168.a Teapot with Begonias [('original', 0, 48, 'baseline error')]
+1991.16 Goblet (Berkemeyer) [('original', 0, 615, 'baseline error')]
+1966.371 The Vicarello Goblet [('original', 0, 889, 'baseline error')]
+1944.190 Amphora Vase [('original', 0, 889, 'baseline error')]
+2022.224 Gu-Shaped Flower Vase [('original', 0, 402, 'baseline error')]
+1917.357 Pitcher [('original', 0, 402, 'baseline error')]
+1942.1081 Three-Part Pitcher [('original', 0, 486, 'baseline error')]
+1989.3 Bell (Lai Zhong) [('original', 0, 402, 'baseline error')]
+1962.44 Bell (Bo Zhong) [('original', 0, 889, 'baseline error')]
+1918.374 Guitar [('original', 0, 402, 'accepted'), ('blur', 1, 402, 'accepted'), ('low light', 1, 48, 'induced error'), ('JPEG', 1, 48, 'induced error'), ('rotation', 1, 402, 'accepted'), ('low light', 2, 615, 'induced error'), ('low light', 3, 615, 'induced error')]
+1918.336 Guitar [('original', 0, 48, 'baseline error')]
+TRACE [('LOCAL/MOCK', 'QUERY', 'ok'), ('LOCAL/MOCK', 'UPSERT', 'ok')]
+ORDER CHANGES []
+FOLLOW-UP cbc525073dc649719ca36671f7ad3e2b CPU ms 111.389
+1918.370 Guitar [('original', 0, 402, 'accepted'), ('low light', 1, 402, 'accepted'), ('blur', 1, 402, 'accepted'), ('JPEG', 1, 402, 'accepted'), ('colour cast', 1, 402, 'accepted'), ('JPEG', 2, 402, 'accepted'), ('JPEG', 3, 889, 'confident error')]
+TRACE [('LOCAL/MOCK', 'QUERY', 'ok'), ('LOCAL/MOCK', 'UPSERT', 'ok')]
+ORDER CHANGES [{'photo_id': '07c4ea9b70ea7b92c29b3d4d3a4d2c43', 'action': 'TEST', 'reason_code': 'RECALLED_FAILURE', 'evidence_ids': ['6f3c957474624b65bd20953bd90d5148:9868aead1e600a808ffa39985a758bcd', 'c061ca78c5884c088c493e9f2e04f0ce'], 'budget_remaining': 71}]
+wall_s 1.529 process_cpu_s 1.461 max_rss_kib 123712 persistent_bytes 8189560

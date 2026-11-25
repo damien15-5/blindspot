@@ -1,0 +1,4 @@
+PASS desktop saved report, paired images and remembered test order
+PASS mobile layout and trial selection
+PASS authenticated browser run, actual server restart, stale-step replay and continuation
+PASS zero browser uncaught errors

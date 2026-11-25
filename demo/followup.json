@@ -1,5 +1,5 @@
 {
-  "id": "3be4a99072ca4710a16cbbcad2a69c37",
+  "id": "cbc525073dc649719ca36671f7ad3e2b",
   "goal": "Find camera conditions that change my inventory labels",
   "model_sha": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a",
   "preprocessing_sha": "21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
@@ -7,7 +7,7 @@
   "seed": 42,
   "budget": 72,
   "cursor": 7,
-  "created": "2026-11-25 12:03:55",
+  "created": "2026-11-25 12:26:16",
   "model_revision": "3ba07f12712fa58fd6b3d661f9909c9e332c5005",
   "photos": [
     {
@@ -20,13 +20,13 @@
       "state": "retake",
       "recall": [
         {
-          "id": "abc8b7c3a68c4e70bcedea85074920c8:9868aead1e600a808ffa39985a758bcd",
+          "id": "6f3c957474624b65bd20953bd90d5148:9868aead1e600a808ffa39985a758bcd",
           "score": 0.9842807650566101,
           "metadata": {
             "model": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a",
             "owner": "Damien",
             "condition": "low light",
-            "trial": "1d672ec0421f40c489177f8b1be4ef38",
+            "trial": "ee0ddacbdf304d149cc258b9d25e11d1",
             "accepted": [
               "402"
             ],
@@ -42,7 +42,7 @@
       ],
       "trials": [
         {
-          "id": "9866298bb1d140209bc8eb468ff193ca",
+          "id": "918efbeddd2f445f8f035a5ab630f797",
           "artifact": "3e25e1546caa8104bcf3d2e4b40f7980f65e1f9cc1f01fb620431eb2d5163bf5",
           "condition": "original",
           "level": 0,
@@ -56,7 +56,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 12.892064,
+          "duration_ms": 16.942291,
           "artifact_sha": "aed9bccb88330ef55bad40b96e40a4ff760e2f04f4f1f93a1bea9f2799c80aba",
           "predictions": [
             {
@@ -88,7 +88,7 @@
           "image": "/demo/images/aed9bccb88330ef55bad40b96e40a4ff760e2f04f4f1f93a1bea9f2799c80aba.png"
         },
         {
-          "id": "8e5b1b8069c74568a21f44aeb29e4b51",
+          "id": "c061ca78c5884c088c493e9f2e04f0ce",
           "artifact": "4babe3da7c7e14952e06eac56f558a6d6eae3538fb8a2c7cb102ba0890efb89c",
           "condition": "low light",
           "level": 1,
@@ -102,7 +102,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 12.730347,
+          "duration_ms": 14.50025,
           "artifact_sha": "961dfcf04e41c29b9486c7ea78732cc6792e25b908f02e73b34259f7ffc82d7b",
           "predictions": [
             {
@@ -134,7 +134,7 @@
           "image": "/demo/images/961dfcf04e41c29b9486c7ea78732cc6792e25b908f02e73b34259f7ffc82d7b.png"
         },
         {
-          "id": "5e093b0c7de049ae8eedec359dd78161",
+          "id": "3c8cfd30a6e347f78f15727cfcf9ba6c",
           "artifact": "c198bd8d49e81cf13860baa84522bb21a99652ff1b52f1bba3c8a22b054f443e",
           "condition": "blur",
           "level": 1,
@@ -148,7 +148,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 12.02787,
+          "duration_ms": 19.952592,
           "artifact_sha": "74d7fe510150b454028c38f45cdd508db17aa449d04f3267e407d45cc0814837",
           "predictions": [
             {
@@ -180,7 +180,7 @@
           "image": "/demo/images/74d7fe510150b454028c38f45cdd508db17aa449d04f3267e407d45cc0814837.png"
         },
         {
-          "id": "621be53720d3448288cdae89fcbe244b",
+          "id": "5482c3050ab64694b5219b8358699520",
           "artifact": "52c9a20b843a1a54eea11c8c940adfab7c81d673d0a5518ca80a70d9bf7097bf",
           "condition": "JPEG",
           "level": 1,
@@ -194,7 +194,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 13.78686,
+          "duration_ms": 14.188987,
           "artifact_sha": "4753e667214deec81743b1cc688fc54716410cd57a65ec9bc5abca2459be9532",
           "predictions": [
             {
@@ -226,7 +226,7 @@
           "image": "/demo/images/4753e667214deec81743b1cc688fc54716410cd57a65ec9bc5abca2459be9532.png"
         },
         {
-          "id": "0c9ace89c8ff4d388997c18f2dc4f46e",
+          "id": "e79ea16ebf734df4bda51e89b05af39b",
           "artifact": "f516ef110e58be6059e63c0169ed27d0491a59819c1ca91ba4bd19f612faf9ab",
           "condition": "colour cast",
           "level": 1,
@@ -240,7 +240,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 11.45023,
+          "duration_ms": 13.507035,
           "artifact_sha": "4ff85172f3197d1c5618feec1a4a5fd50932df06878199ab8f8a3897ae6864b1",
           "predictions": [
             {
@@ -272,7 +272,7 @@
           "image": "/demo/images/4ff85172f3197d1c5618feec1a4a5fd50932df06878199ab8f8a3897ae6864b1.png"
         },
         {
-          "id": "621463c1ac174c9eb71603fb84c3e65f",
+          "id": "d21f061beac74063ac467030306c41d7",
           "artifact": "bdd42b1f0145681009e3198c642c4a60db371fe3d73eb796708a166c82705c4a",
           "condition": "JPEG",
           "level": 2,
@@ -286,7 +286,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 12.596654,
+          "duration_ms": 14.650147,
           "artifact_sha": "3c01d7581ae6fcf5e893e1fa3f59584dc2a733213ae8627fb0f391f86028dd52",
           "predictions": [
             {
@@ -318,7 +318,7 @@
           "image": "/demo/images/3c01d7581ae6fcf5e893e1fa3f59584dc2a733213ae8627fb0f391f86028dd52.png"
         },
         {
-          "id": "98bb6380f0e94b3fbcfe4e03ebb76847",
+          "id": "b94a837441ab4f1a97193a7820df4454",
           "artifact": "21b135d7ab6d4cfe2910506a1392da83f3a15a35f9be095007d1b176dbf7639b",
           "condition": "JPEG",
           "level": 3,
@@ -332,7 +332,7 @@
             "pipeline": "rgb768-v1",
             "seed": 0
           },
-          "duration_ms": 12.104198,
+          "duration_ms": 17.648122,
           "artifact_sha": "1f01e762a047cde486652af998e8e4bcab1979e60771a85c775c847130d6b919",
           "predictions": [
             {
@@ -372,7 +372,7 @@
       "action": "TEST",
       "reason_code": "BASELINE",
       "evidence_ids": [
-        "9866298bb1d140209bc8eb468ff193ca"
+        "918efbeddd2f445f8f035a5ab630f797"
       ],
       "budget_remaining": 72
     },
@@ -381,8 +381,8 @@
       "action": "TEST",
       "reason_code": "RECALLED_FAILURE",
       "evidence_ids": [
-        "abc8b7c3a68c4e70bcedea85074920c8:9868aead1e600a808ffa39985a758bcd",
-        "8e5b1b8069c74568a21f44aeb29e4b51"
+        "6f3c957474624b65bd20953bd90d5148:9868aead1e600a808ffa39985a758bcd",
+        "c061ca78c5884c088c493e9f2e04f0ce"
       ],
       "budget_remaining": 71
     },
@@ -391,7 +391,7 @@
       "action": "TEST",
       "reason_code": "MILD_PROBE",
       "evidence_ids": [
-        "5e093b0c7de049ae8eedec359dd78161"
+        "3c8cfd30a6e347f78f15727cfcf9ba6c"
       ],
       "budget_remaining": 70
     },
@@ -400,7 +400,7 @@
       "action": "TEST",
       "reason_code": "MILD_PROBE",
       "evidence_ids": [
-        "621be53720d3448288cdae89fcbe244b"
+        "5482c3050ab64694b5219b8358699520"
       ],
       "budget_remaining": 69
     },
@@ -409,7 +409,7 @@
       "action": "TEST",
       "reason_code": "MILD_PROBE",
       "evidence_ids": [
-        "0c9ace89c8ff4d388997c18f2dc4f46e"
+        "e79ea16ebf734df4bda51e89b05af39b"
       ],
       "budget_remaining": 68
     },
@@ -418,8 +418,8 @@
       "action": "TEST",
       "reason_code": "LARGEST_LABEL_DROP",
       "evidence_ids": [
-        "621be53720d3448288cdae89fcbe244b",
-        "621463c1ac174c9eb71603fb84c3e65f"
+        "5482c3050ab64694b5219b8358699520",
+        "d21f061beac74063ac467030306c41d7"
       ],
       "budget_remaining": 67
     },
@@ -428,8 +428,8 @@
       "action": "TEST",
       "reason_code": "LARGEST_LABEL_DROP",
       "evidence_ids": [
-        "621be53720d3448288cdae89fcbe244b",
-        "98bb6380f0e94b3fbcfe4e03ebb76847"
+        "5482c3050ab64694b5219b8358699520",
+        "b94a837441ab4f1a97193a7820df4454"
       ],
       "budget_remaining": 66
     },
@@ -438,7 +438,7 @@
       "action": "REQUEST_RETAKE",
       "reason_code": "WRONG_TOP1_GE_070",
       "evidence_ids": [
-        "98bb6380f0e94b3fbcfe4e03ebb76847"
+        "b94a837441ab4f1a97193a7820df4454"
       ],
       "budget_remaining": 66
     }
@@ -449,16 +449,16 @@
       "method": "QUERY",
       "path": "/memory",
       "status": "ok",
-      "duration_ms": 0.11199000073247589
+      "duration_ms": 0.12323000009928364
     },
     {
       "provider": "LOCAL/MOCK",
       "method": "UPSERT",
       "path": "/memory",
       "status": "ok",
-      "duration_ms": 0.048502999561605975
+      "duration_ms": 0.1533780014142394
     }
   ],
   "pending_writes": 0,
-  "inference_cpu_ms": 87.588223
+  "inference_cpu_ms": 111.389424
 }
