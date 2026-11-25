@@ -65,3 +65,7 @@ The local memory match had cosine similarity **0.984281** and referred to the fi
 ## Verification boundary
 
 The source model revision is `3ba07f12712fa58fd6b3d661f9909c9e332c5005`. Its input is `pixel_values`, output is `logits`, and softmax is applied once. Public downloads, source CC0 records, local model execution, persistence, frontend and offline adapters were checked. Local process restart is proven. Sprite billing, service wake, checkpoint restore, authenticated Pinecone write/read visibility, and Box OAuth/list/download/upload behavior require an authorized live run. [Exact setup and acceptance gates](DEPLOY.md)
+
+## Clean committed archive
+
+An independent extraction of local build commit `520cb65` fetched the pinned model from its public revision and ran the two-session smoke in a fresh database. All **25 trials** reproduced the saved top-five IDs and scores exactly, together with the trial PNG hashes and both decision reason-code sequences. All relative links in the project’s top-level Markdown resolved in that archive. FFprobe verified the walkthrough as H.264, 1280×800, 76.000 seconds and 352,439 bytes.
