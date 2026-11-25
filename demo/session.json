@@ -1,0 +1,1350 @@
+{
+  "id": "abc8b7c3a68c4e70bcedea85074920c8",
+  "goal": "Find camera conditions that change my inventory labels",
+  "model_sha": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a",
+  "preprocessing_sha": "21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+  "state": "done",
+  "seed": 42,
+  "budget": 72,
+  "cursor": 18,
+  "created": "2026-11-25 12:03:54",
+  "model_revision": "3ba07f12712fa58fd6b3d661f9909c9e332c5005",
+  "photos": [
+    {
+      "id": "44bf8bb37bb30eb4cc0250d263ad5c29",
+      "title": "Teapot",
+      "source_id": "https://www.clevelandart.org/art/1940.228",
+      "source_version": "1940.228",
+      "sha256": "40631e1b097f19fa2e391d10f825b45fa9e219c596028ded8b89b2c291a6d8e2",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 849,
+          "label": "teapot"
+        }
+      ],
+      "trials": [
+        {
+          "id": "7cb3b8af64c14446949e0fd6e1f41f2d",
+          "artifact": "c10c832b157200eb42ba170952ebb21bd799b23cf33ac728e7af615ad3facee0",
+          "condition": "original",
+          "level": 0,
+          "mass": 3.5604261205968157e-10,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 50.827504,
+          "artifact_sha": "2df2fc52534f8f1a62d0cc4b281f5f8073cff7e473cfa0cb6dbb1a64940f8c07",
+          "predictions": [
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.2359808385372162
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.2119874507188797
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.20942023396492004
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.0930861383676529
+            },
+            {
+              "id": 580,
+              "label": "greenhouse, nursery, glasshouse",
+              "score": 0.06989270448684692
+            }
+          ],
+          "image": "/demo/images/2df2fc52534f8f1a62d0cc4b281f5f8073cff7e473cfa0cb6dbb1a64940f8c07.png"
+        }
+      ]
+    },
+    {
+      "id": "1041403e889b2e6935d917dc2d38e13c",
+      "title": "Teapot with Begonias",
+      "source_id": "https://www.clevelandart.org/art/2022.168.a",
+      "source_version": "2022.168.a",
+      "sha256": "8f7282dec198e2c97afd9a9fa6f2b819cb287885d9a2d3d690187a6916d19323",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 849,
+          "label": "teapot"
+        }
+      ],
+      "trials": [
+        {
+          "id": "7aadc922b7384175b2ad3c2277b89a0d",
+          "artifact": "43690dae297f0e28669febbf1d5531bcd708d15d124c8759e80a5d7dfa30d86b",
+          "condition": "original",
+          "level": 0,
+          "mass": 3.070319110065611e-08,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 14.434099,
+          "artifact_sha": "6f3c76fa40f317244910863623f0cac7ae72f3e4e58704f6b7961810e4716b25",
+          "predictions": [
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.3556499779224396
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.2866872549057007
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.07857290655374527
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.07690531015396118
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.02934940718114376
+            }
+          ],
+          "image": "/demo/images/6f3c76fa40f317244910863623f0cac7ae72f3e4e58704f6b7961810e4716b25.png"
+        }
+      ]
+    },
+    {
+      "id": "14eb1deefbbdc15c0b0640ae73aa0a28",
+      "title": "Goblet (Berkemeyer)",
+      "source_id": "https://www.clevelandart.org/art/1991.16",
+      "source_version": "1991.16",
+      "sha256": "a4a7cb469ff4c33201466f73ed085fde849975c184d35db6e3fda8af44ce244a",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 572,
+          "label": "goblet"
+        }
+      ],
+      "trials": [
+        {
+          "id": "4a2ebc751bd5499398ab2608b09cf139",
+          "artifact": "bfc9c9cce27a2c67a79b882c71f15cd9fcc126f7e9adf30f40876bd81f1faeb3",
+          "condition": "original",
+          "level": 0,
+          "mass": 1.0574177644606664e-10,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 11.794363,
+          "artifact_sha": "ab08cf1839059768eff276facc94677684d5c8bd6324e76c4ebc247c63788180",
+          "predictions": [
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.551971971988678
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.2510421872138977
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.0670003816485405
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.05760611221194267
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.025477761402726173
+            }
+          ],
+          "image": "/demo/images/ab08cf1839059768eff276facc94677684d5c8bd6324e76c4ebc247c63788180.png"
+        }
+      ]
+    },
+    {
+      "id": "7d5e1306f35cac1c1afba5c3a4f0786f",
+      "title": "The Vicarello Goblet",
+      "source_id": "https://www.clevelandart.org/art/1966.371",
+      "source_version": "1966.371",
+      "sha256": "370daa8cf70832037969cab984ddf05f7c6f73d00e813b19cf0c38d8f8fbdab1",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 572,
+          "label": "goblet"
+        }
+      ],
+      "trials": [
+        {
+          "id": "fe4bde62f15d49dead7f4c16edba1d2f",
+          "artifact": "33b111350fd4b4e58296eac5a85a594a3b4427fd7d1c149bd40f7437dcf2fcd4",
+          "condition": "original",
+          "level": 0,
+          "mass": 1.8768293863491436e-10,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 13.075274,
+          "artifact_sha": "45d25ae0b8327c8f7c2046e7a3205e1744e2fcd626270618d8f05e365e1dd3bf",
+          "predictions": [
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.48862314224243164
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.24498294293880463
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.12931133806705475
+            },
+            {
+              "id": 580,
+              "label": "greenhouse, nursery, glasshouse",
+              "score": 0.03689684346318245
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.02669895440340042
+            }
+          ],
+          "image": "/demo/images/45d25ae0b8327c8f7c2046e7a3205e1744e2fcd626270618d8f05e365e1dd3bf.png"
+        }
+      ]
+    },
+    {
+      "id": "4a4ff8da2852200e28199211525d19ac",
+      "title": "Amphora Vase",
+      "source_id": "https://www.clevelandart.org/art/1944.190",
+      "source_version": "1944.190",
+      "sha256": "81b9f5462f7715cb85666cb55949df6f746b17f942a5fedc53fcb29fba21968a",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 883,
+          "label": "vase"
+        }
+      ],
+      "trials": [
+        {
+          "id": "b61f47eb1e5f4a8d9a58078e27953aae",
+          "artifact": "776fd1a9097bf2ee4ee2c5e715b9e254cc0cee5c51a72d86f8b758117a64e470",
+          "condition": "original",
+          "level": 0,
+          "mass": 4.348127635722676e-09,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 13.776442,
+          "artifact_sha": "d677c2f4a5dad986123bf1c9a5b56717edc9031e603f373502b074ac60679572",
+          "predictions": [
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.404053658246994
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.14014683663845062
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.13423247635364532
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.12625519931316376
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.06973352283239365
+            }
+          ],
+          "image": "/demo/images/d677c2f4a5dad986123bf1c9a5b56717edc9031e603f373502b074ac60679572.png"
+        }
+      ]
+    },
+    {
+      "id": "1db5dc999b6a8156ad1139448cc6eb56",
+      "title": "Gu-Shaped Flower Vase",
+      "source_id": "https://www.clevelandart.org/art/2022.224",
+      "source_version": "2022.224",
+      "sha256": "76bef52dde44eb257b55e968ae30b2b7d38a2e9e81c2821026977ee30c05418f",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 883,
+          "label": "vase"
+        }
+      ],
+      "trials": [
+        {
+          "id": "055d8aae12f44b39b74040d077c9befb",
+          "artifact": "252e757d98b5b22c6888030be0b959f2dd9e64af4bfed614c22641c4ee60a861",
+          "condition": "original",
+          "level": 0,
+          "mass": 2.0947363843504263e-09,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.571329,
+          "artifact_sha": "58b08c8335d12d35d384ea7543d4c9717d8faaec515ac4426275b00b11d7c922",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.3977099359035492
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.17779973149299622
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.08515934646129608
+            },
+            {
+              "id": 491,
+              "label": "chain saw, chainsaw",
+              "score": 0.08174899965524673
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.0701327919960022
+            }
+          ],
+          "image": "/demo/images/58b08c8335d12d35d384ea7543d4c9717d8faaec515ac4426275b00b11d7c922.png"
+        }
+      ]
+    },
+    {
+      "id": "8d538104c1606898d863e805d63101e3",
+      "title": "Pitcher",
+      "source_id": "https://www.clevelandart.org/art/1917.357",
+      "source_version": "1917.357",
+      "sha256": "b39c3780355053ac5b80c23639e7a12455eec1ef79f753c59b9b1c97ca3b15dd",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 725,
+          "label": "pitcher, ewer"
+        }
+      ],
+      "trials": [
+        {
+          "id": "acff3225a13e4e3d95ec9c96e94205a0",
+          "artifact": "41bb0d42153d11a51ddfb204f2419f3333e4328ffc874330bc266f85ba28c99a",
+          "condition": "original",
+          "level": 0,
+          "mass": 4.585810842172577e-09,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 15.189279,
+          "artifact_sha": "30c85f4b107c459705630f56d3a46c344dc91d5071454a36b46c0a8038b53757",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.24671924114227295
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.22413326799869537
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.15457947552204132
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.13222865760326385
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.06410132348537445
+            }
+          ],
+          "image": "/demo/images/30c85f4b107c459705630f56d3a46c344dc91d5071454a36b46c0a8038b53757.png"
+        }
+      ]
+    },
+    {
+      "id": "62e4c1ad288ee89afade2ac030fe17b7",
+      "title": "Three-Part Pitcher",
+      "source_id": "https://www.clevelandart.org/art/1942.1081",
+      "source_version": "1942.1081",
+      "sha256": "75f208189b832466bbce9fa3c44002928806a7abd58da2cedd8a5389de7d5d82",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 725,
+          "label": "pitcher, ewer"
+        }
+      ],
+      "trials": [
+        {
+          "id": "1f10b993df624a5abec68f75b4eff20c",
+          "artifact": "6aeb0fc001a5c5719126157743aa9656526e1bd6f49b5b73e5dc5fd7dc8afc8a",
+          "condition": "original",
+          "level": 0,
+          "mass": 5.190111007635778e-09,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.182105,
+          "artifact_sha": "afc7ac9b20a163f87d878daade1fee02f3339abe50d80f4c69db7858d092046d",
+          "predictions": [
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.18244601786136627
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.15847495198249817
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.14986032247543335
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.1286371499300003
+            },
+            {
+              "id": 580,
+              "label": "greenhouse, nursery, glasshouse",
+              "score": 0.09279020875692368
+            }
+          ],
+          "image": "/demo/images/afc7ac9b20a163f87d878daade1fee02f3339abe50d80f4c69db7858d092046d.png"
+        }
+      ]
+    },
+    {
+      "id": "689a5241908a96c2a14ed4b2fc690d54",
+      "title": "Bell (Lai Zhong)",
+      "source_id": "https://www.clevelandart.org/art/1989.3",
+      "source_version": "1989.3",
+      "sha256": "16b64ce410093c62eb4b8a02fec37520dcc358f180fad7779322429afb622dd8",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 494,
+          "label": "chime, bell, gong"
+        }
+      ],
+      "trials": [
+        {
+          "id": "a5dd31a0c0854a48bcc41e71ab3634a0",
+          "artifact": "ceb54f674ebe331c2496a0dd42d75ca7c05a21cffae43688c1e9accfc30e887e",
+          "condition": "original",
+          "level": 0,
+          "mass": 2.293421312235533e-12,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.859248,
+          "artifact_sha": "a361bcd025d465c354a8a15343df14c0d9b48a5a1b22787baa4526fe42a250bb",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.6352068781852722
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.2194722294807434
+            },
+            {
+              "id": 546,
+              "label": "electric guitar",
+              "score": 0.05019724741578102
+            },
+            {
+              "id": 245,
+              "label": "French bulldog",
+              "score": 0.023800037801265717
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.01655859872698784
+            }
+          ],
+          "image": "/demo/images/a361bcd025d465c354a8a15343df14c0d9b48a5a1b22787baa4526fe42a250bb.png"
+        }
+      ]
+    },
+    {
+      "id": "e3a3440a7d0fe4c4dd08084df90e5f27",
+      "title": "Bell (Bo Zhong)",
+      "source_id": "https://www.clevelandart.org/art/1962.44",
+      "source_version": "1962.44",
+      "sha256": "90cf4dc5a4209d29324fe47961626558aa7064a341f95babd16b39b15b34034e",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 494,
+          "label": "chime, bell, gong"
+        }
+      ],
+      "trials": [
+        {
+          "id": "eaa7f729160f45ca95ebfaba1a751e65",
+          "artifact": "e47959a2a1a99b36dd62e2966152a0b50996714d593ada86475037aaf9374224",
+          "condition": "original",
+          "level": 0,
+          "mass": 2.1089649124284016e-12,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 13.023888,
+          "artifact_sha": "7b214ecac1c5a389eb8317befff80c9a901be1ddd6b638b117222ede4b274dba",
+          "predictions": [
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.6874433159828186
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.1668713539838791
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.05635284632444382
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.05607771500945091
+            },
+            {
+              "id": 684,
+              "label": "ocarina, sweet potato",
+              "score": 0.006082393694669008
+            }
+          ],
+          "image": "/demo/images/7b214ecac1c5a389eb8317befff80c9a901be1ddd6b638b117222ede4b274dba.png"
+        }
+      ]
+    },
+    {
+      "id": "9868aead1e600a808ffa39985a758bcd",
+      "title": "Guitar",
+      "source_id": "https://www.clevelandart.org/art/1918.374",
+      "source_version": "1918.374",
+      "sha256": "409e34536922a2a0ed192035f306b3a730f738b2112bc8034534da49e728d5af",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "done",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 402,
+          "label": "acoustic guitar"
+        }
+      ],
+      "trials": [
+        {
+          "id": "1285f156c8cd46ecbd997f81d2df9b18",
+          "artifact": "eafbe0650f06f383741d9663c6fa54837896e69390eb62682dc866aa86711fa7",
+          "condition": "original",
+          "level": 0,
+          "mass": 0.650995671749115,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 11.74746,
+          "artifact_sha": "2b80b2412de3be1a9d7581fef298c7ab03696b2b3abcf0d6475b40681529d39d",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.650995671749115
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.2101326435804367
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.05240121856331825
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.04404519125819206
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.008776283822953701
+            }
+          ],
+          "image": "/demo/images/2b80b2412de3be1a9d7581fef298c7ab03696b2b3abcf0d6475b40681529d39d.png"
+        },
+        {
+          "id": "9404b381bd9f488a8c11c60a457c293e",
+          "artifact": "20e485ec225b7cae1b8f34e27019001057f2229f58aa1c1db69665c2383cd1ea",
+          "condition": "blur",
+          "level": 1,
+          "mass": 0.8942182660102844,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "blur",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 16.721517,
+          "artifact_sha": "1a058bf633923e4db33dcdb75af79b365b89db4b7c1cb470484a98627886838e",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.8942182660102844
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.04021601751446724
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.03120303712785244
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.022854160517454147
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.0018070777878165245
+            }
+          ],
+          "image": "/demo/images/1a058bf633923e4db33dcdb75af79b365b89db4b7c1cb470484a98627886838e.png"
+        },
+        {
+          "id": "1d672ec0421f40c489177f8b1be4ef38",
+          "artifact": "ab2806c08547539d70acf138307ccb56ee95789259f880eb9807b314fe54e2f4",
+          "condition": "low light",
+          "level": 1,
+          "mass": 0.050791751593351364,
+          "outcome": "induced error",
+          "cached": 0,
+          "transform": {
+            "condition": "low light",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 11.987255,
+          "artifact_sha": "519812a6727a50c479a08e32547ff4f0395192c2e166b7913cbe828eecabd7ae",
+          "predictions": [
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.337667316198349
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.1496872901916504
+            },
+            {
+              "id": 807,
+              "label": "solar dish, solar collector, solar furnace",
+              "score": 0.09579967707395554
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.08962580561637878
+            },
+            {
+              "id": 626,
+              "label": "lighter, light, igniter, ignitor",
+              "score": 0.053149763494729996
+            }
+          ],
+          "image": "/demo/images/519812a6727a50c479a08e32547ff4f0395192c2e166b7913cbe828eecabd7ae.png"
+        },
+        {
+          "id": "bd474c1312d6454385017ac2875231d6",
+          "artifact": "6d033d55802ac28350efcfe223d0599290778986cb2600bc171d69a8a2a1ec15",
+          "condition": "JPEG",
+          "level": 1,
+          "mass": 0.19982892274856567,
+          "outcome": "induced error",
+          "cached": 0,
+          "transform": {
+            "condition": "JPEG",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.651078,
+          "artifact_sha": "8527682ad060beba82f59940bee4777e34494ccc8ae91e624a77b8b31074804b",
+          "predictions": [
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.35424691438674927
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.21350938081741333
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.19982892274856567
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.18944191932678223
+            },
+            {
+              "id": 515,
+              "label": "cowboy hat, ten-gallon hat",
+              "score": 0.008702144026756287
+            }
+          ],
+          "image": "/demo/images/8527682ad060beba82f59940bee4777e34494ccc8ae91e624a77b8b31074804b.png"
+        },
+        {
+          "id": "8468dc1354a549c7b14d3ed9c6fe3a14",
+          "artifact": "d67843cdf11fb76856902bf99ebd62ed6756498cf843b1e07900ae330e742ac5",
+          "condition": "rotation",
+          "level": 1,
+          "mass": 0.3934430778026581,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "rotation",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.461329,
+          "artifact_sha": "59492c90d97780ac9e6d369124b174472d04d5a6de2b99f255b68376dbff0b8e",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.3934430778026581
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.3866376578807831
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.12252256274223328
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.04064744710922241
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.010466879233717918
+            }
+          ],
+          "image": "/demo/images/59492c90d97780ac9e6d369124b174472d04d5a6de2b99f255b68376dbff0b8e.png"
+        },
+        {
+          "id": "0f916c6a72264342b4c521f4a1dcc6fa",
+          "artifact": "e11ea0ffcb8c115724bdaf2ca7a84c7b4d35b8a69be26c8541e66b85f8b0e746",
+          "condition": "low light",
+          "level": 2,
+          "mass": 0.10849276185035706,
+          "outcome": "induced error",
+          "cached": 0,
+          "transform": {
+            "condition": "low light",
+            "level": 2,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 16.587299,
+          "artifact_sha": "2587e7783a8b4de2046c8638b6564adcb854c9d6e4257e5905f5865850d85e7a",
+          "predictions": [
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.19411994516849518
+            },
+            {
+              "id": 807,
+              "label": "solar dish, solar collector, solar furnace",
+              "score": 0.14763838052749634
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.10849276185035706
+            },
+            {
+              "id": 626,
+              "label": "lighter, light, igniter, ignitor",
+              "score": 0.107728973031044
+            },
+            {
+              "id": 94,
+              "label": "hummingbird",
+              "score": 0.10467851907014847
+            }
+          ],
+          "image": "/demo/images/2587e7783a8b4de2046c8638b6564adcb854c9d6e4257e5905f5865850d85e7a.png"
+        },
+        {
+          "id": "f92489f764d744cca032e00a2fcc9dfb",
+          "artifact": "b9e3f7ccc576eb4e9cb10082f46a32b418aa7fcd7a1f516c839976b56361347e",
+          "condition": "low light",
+          "level": 3,
+          "mass": 0.01217296440154314,
+          "outcome": "induced error",
+          "cached": 0,
+          "transform": {
+            "condition": "low light",
+            "level": 3,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 15.704661,
+          "artifact_sha": "4e78a040f5ebb9faca38826d9506a02fadd066befdf82dee697efe73a13f0fbc",
+          "predictions": [
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.2474864274263382
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.13017885386943817
+            },
+            {
+              "id": 23,
+              "label": "vulture",
+              "score": 0.07899994403123856
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.054710496217012405
+            },
+            {
+              "id": 807,
+              "label": "solar dish, solar collector, solar furnace",
+              "score": 0.05033835396170616
+            }
+          ],
+          "image": "/demo/images/4e78a040f5ebb9faca38826d9506a02fadd066befdf82dee697efe73a13f0fbc.png"
+        }
+      ]
+    },
+    {
+      "id": "a8a6e8d828d3b62b9d5f9c8f9d2d0d38",
+      "title": "Guitar",
+      "source_id": "https://www.clevelandart.org/art/1918.336",
+      "source_version": "1918.336",
+      "sha256": "212b8c3083f1a27d8cf1db5b2e04ea0f874888c47816b7455bc4d6b1cc9d4673",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [],
+      "accepted": [
+        {
+          "id": 402,
+          "label": "acoustic guitar"
+        }
+      ],
+      "trials": [
+        {
+          "id": "3ac53b86b7504896b7c2a33257453560",
+          "artifact": "e4484a990cfc36b5e1f184cdb1e3776b4bd59223f68c9acca7e2fe6b9cd57ccc",
+          "condition": "original",
+          "level": 0,
+          "mass": 0.08107031881809235,
+          "outcome": "baseline error",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.624336,
+          "artifact_sha": "1642b05e93887765dd3f6e0175549b9e0bde34dbec21587785b1290281b3a013",
+          "predictions": [
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.3690515160560608
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.16872641444206238
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.13078664243221283
+            },
+            {
+              "id": 486,
+              "label": "cello, violoncello",
+              "score": 0.10105831921100616
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.08107031881809235
+            }
+          ],
+          "image": "/demo/images/1642b05e93887765dd3f6e0175549b9e0bde34dbec21587785b1290281b3a013.png"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "photo_id": "44bf8bb37bb30eb4cc0250d263ad5c29",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "7cb3b8af64c14446949e0fd6e1f41f2d"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "44bf8bb37bb30eb4cc0250d263ad5c29",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "7cb3b8af64c14446949e0fd6e1f41f2d"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "1041403e889b2e6935d917dc2d38e13c",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "7aadc922b7384175b2ad3c2277b89a0d"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "1041403e889b2e6935d917dc2d38e13c",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "7aadc922b7384175b2ad3c2277b89a0d"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "14eb1deefbbdc15c0b0640ae73aa0a28",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "4a2ebc751bd5499398ab2608b09cf139"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "14eb1deefbbdc15c0b0640ae73aa0a28",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "4a2ebc751bd5499398ab2608b09cf139"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "7d5e1306f35cac1c1afba5c3a4f0786f",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "fe4bde62f15d49dead7f4c16edba1d2f"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "7d5e1306f35cac1c1afba5c3a4f0786f",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "fe4bde62f15d49dead7f4c16edba1d2f"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "4a4ff8da2852200e28199211525d19ac",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "b61f47eb1e5f4a8d9a58078e27953aae"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "4a4ff8da2852200e28199211525d19ac",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "b61f47eb1e5f4a8d9a58078e27953aae"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "1db5dc999b6a8156ad1139448cc6eb56",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "055d8aae12f44b39b74040d077c9befb"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "1db5dc999b6a8156ad1139448cc6eb56",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "055d8aae12f44b39b74040d077c9befb"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "8d538104c1606898d863e805d63101e3",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "acff3225a13e4e3d95ec9c96e94205a0"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "8d538104c1606898d863e805d63101e3",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "acff3225a13e4e3d95ec9c96e94205a0"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "62e4c1ad288ee89afade2ac030fe17b7",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "1f10b993df624a5abec68f75b4eff20c"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "62e4c1ad288ee89afade2ac030fe17b7",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "1f10b993df624a5abec68f75b4eff20c"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "689a5241908a96c2a14ed4b2fc690d54",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "a5dd31a0c0854a48bcc41e71ab3634a0"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "689a5241908a96c2a14ed4b2fc690d54",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "a5dd31a0c0854a48bcc41e71ab3634a0"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "e3a3440a7d0fe4c4dd08084df90e5f27",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "eaa7f729160f45ca95ebfaba1a751e65"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "e3a3440a7d0fe4c4dd08084df90e5f27",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "eaa7f729160f45ca95ebfaba1a751e65"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "1285f156c8cd46ecbd997f81d2df9b18"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "9404b381bd9f488a8c11c60a457c293e"
+      ],
+      "budget_remaining": 71
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "1d672ec0421f40c489177f8b1be4ef38"
+      ],
+      "budget_remaining": 70
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "bd474c1312d6454385017ac2875231d6"
+      ],
+      "budget_remaining": 69
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "8468dc1354a549c7b14d3ed9c6fe3a14"
+      ],
+      "budget_remaining": 68
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "LARGEST_LABEL_DROP",
+      "evidence_ids": [
+        "1d672ec0421f40c489177f8b1be4ef38",
+        "0f916c6a72264342b4c521f4a1dcc6fa"
+      ],
+      "budget_remaining": 67
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "TEST",
+      "reason_code": "LARGEST_LABEL_DROP",
+      "evidence_ids": [
+        "1d672ec0421f40c489177f8b1be4ef38",
+        "f92489f764d744cca032e00a2fcc9dfb"
+      ],
+      "budget_remaining": 66
+    },
+    {
+      "photo_id": "9868aead1e600a808ffa39985a758bcd",
+      "action": "STOP",
+      "reason_code": "PHOTO_LIMIT",
+      "evidence_ids": [
+        "f92489f764d744cca032e00a2fcc9dfb"
+      ],
+      "budget_remaining": 66
+    },
+    {
+      "photo_id": "a8a6e8d828d3b62b9d5f9c8f9d2d0d38",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "3ac53b86b7504896b7c2a33257453560"
+      ],
+      "budget_remaining": 66
+    },
+    {
+      "photo_id": "a8a6e8d828d3b62b9d5f9c8f9d2d0d38",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "BASELINE_DISAGREES",
+      "evidence_ids": [
+        "3ac53b86b7504896b7c2a33257453560"
+      ],
+      "budget_remaining": 66
+    }
+  ],
+  "events": [
+    {
+      "provider": "LOCAL/MOCK",
+      "method": "QUERY",
+      "path": "/memory",
+      "status": "ok",
+      "duration_ms": 0.03930500133719761
+    },
+    {
+      "provider": "LOCAL/MOCK",
+      "method": "UPSERT",
+      "path": "/memory",
+      "status": "ok",
+      "duration_ms": 0.06396599928848445
+    }
+  ],
+  "pending_writes": 0,
+  "inference_cpu_ms": 280.218466
+}

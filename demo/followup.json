@@ -1,0 +1,464 @@
+{
+  "id": "3be4a99072ca4710a16cbbcad2a69c37",
+  "goal": "Find camera conditions that change my inventory labels",
+  "model_sha": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a",
+  "preprocessing_sha": "21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+  "state": "done",
+  "seed": 42,
+  "budget": 72,
+  "cursor": 7,
+  "created": "2026-11-25 12:03:55",
+  "model_revision": "3ba07f12712fa58fd6b3d661f9909c9e332c5005",
+  "photos": [
+    {
+      "id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "title": "Guitar",
+      "source_id": "https://www.clevelandart.org/art/1918.370",
+      "source_version": "1918.370",
+      "sha256": "9675147052489af4d4473b9895d2e45cbd5331c07b681c99ce00cbb42e6fd935",
+      "provenance": "SAMPLE \u00b7 Cleveland Museum of Art",
+      "state": "retake",
+      "recall": [
+        {
+          "id": "abc8b7c3a68c4e70bcedea85074920c8:9868aead1e600a808ffa39985a758bcd",
+          "score": 0.9842807650566101,
+          "metadata": {
+            "model": "270717121efb0960d60feb712574d55fa27b585f3c4afc14741d81ea980bcd9a",
+            "owner": "Damien",
+            "condition": "low light",
+            "trial": "1d672ec0421f40c489177f8b1be4ef38",
+            "accepted": [
+              "402"
+            ],
+            "outcome": "induced error"
+          }
+        }
+      ],
+      "accepted": [
+        {
+          "id": 402,
+          "label": "acoustic guitar"
+        }
+      ],
+      "trials": [
+        {
+          "id": "9866298bb1d140209bc8eb468ff193ca",
+          "artifact": "3e25e1546caa8104bcf3d2e4b40f7980f65e1f9cc1f01fb620431eb2d5163bf5",
+          "condition": "original",
+          "level": 0,
+          "mass": 0.6043978929519653,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "original",
+            "level": 0,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.892064,
+          "artifact_sha": "aed9bccb88330ef55bad40b96e40a4ff760e2f04f4f1f93a1bea9f2799c80aba",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.6043978929519653
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.1993761956691742
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.1618618369102478
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.01648811623454094
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.0034236719366163015
+            }
+          ],
+          "image": "/demo/images/aed9bccb88330ef55bad40b96e40a4ff760e2f04f4f1f93a1bea9f2799c80aba.png"
+        },
+        {
+          "id": "8e5b1b8069c74568a21f44aeb29e4b51",
+          "artifact": "4babe3da7c7e14952e06eac56f558a6d6eae3538fb8a2c7cb102ba0890efb89c",
+          "condition": "low light",
+          "level": 1,
+          "mass": 0.6638126373291016,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "low light",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.730347,
+          "artifact_sha": "961dfcf04e41c29b9486c7ea78732cc6792e25b908f02e73b34259f7ffc82d7b",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.6638126373291016
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.20244061946868896
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.0876544862985611
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.011235104873776436
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.008447092026472092
+            }
+          ],
+          "image": "/demo/images/961dfcf04e41c29b9486c7ea78732cc6792e25b908f02e73b34259f7ffc82d7b.png"
+        },
+        {
+          "id": "5e093b0c7de049ae8eedec359dd78161",
+          "artifact": "c198bd8d49e81cf13860baa84522bb21a99652ff1b52f1bba3c8a22b054f443e",
+          "condition": "blur",
+          "level": 1,
+          "mass": 0.8268097043037415,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "blur",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.02787,
+          "artifact_sha": "74d7fe510150b454028c38f45cdd508db17aa449d04f3267e407d45cc0814837",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.8268097043037415
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.11504799127578735
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.04536109417676926
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.003094147192314267
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.0025934947188943624
+            }
+          ],
+          "image": "/demo/images/74d7fe510150b454028c38f45cdd508db17aa449d04f3267e407d45cc0814837.png"
+        },
+        {
+          "id": "621be53720d3448288cdae89fcbe244b",
+          "artifact": "52c9a20b843a1a54eea11c8c940adfab7c81d673d0a5518ca80a70d9bf7097bf",
+          "condition": "JPEG",
+          "level": 1,
+          "mass": 0.49784010648727417,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "JPEG",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 13.78686,
+          "artifact_sha": "4753e667214deec81743b1cc688fc54716410cd57a65ec9bc5abca2459be9532",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.49784010648727417
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.22149239480495453
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.20800141990184784
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.04784155637025833
+            },
+            {
+              "id": 580,
+              "label": "greenhouse, nursery, glasshouse",
+              "score": 0.007596680894494057
+            }
+          ],
+          "image": "/demo/images/4753e667214deec81743b1cc688fc54716410cd57a65ec9bc5abca2459be9532.png"
+        },
+        {
+          "id": "0c9ace89c8ff4d388997c18f2dc4f46e",
+          "artifact": "f516ef110e58be6059e63c0169ed27d0491a59819c1ca91ba4bd19f612faf9ab",
+          "condition": "colour cast",
+          "level": 1,
+          "mass": 0.5588207244873047,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "colour cast",
+            "level": 1,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 11.45023,
+          "artifact_sha": "4ff85172f3197d1c5618feec1a4a5fd50932df06878199ab8f8a3897ae6864b1",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.5588207244873047
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.23077091574668884
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.1803605705499649
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.010350042954087257
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.003219910664483905
+            }
+          ],
+          "image": "/demo/images/4ff85172f3197d1c5618feec1a4a5fd50932df06878199ab8f8a3897ae6864b1.png"
+        },
+        {
+          "id": "621463c1ac174c9eb71603fb84c3e65f",
+          "artifact": "bdd42b1f0145681009e3198c642c4a60db371fe3d73eb796708a166c82705c4a",
+          "condition": "JPEG",
+          "level": 2,
+          "mass": 0.4585024118423462,
+          "outcome": "accepted",
+          "cached": 0,
+          "transform": {
+            "condition": "JPEG",
+            "level": 2,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.596654,
+          "artifact_sha": "3c01d7581ae6fcf5e893e1fa3f59584dc2a733213ae8627fb0f391f86028dd52",
+          "predictions": [
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.4585024118423462
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.2689296305179596
+            },
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.21792128682136536
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.017333444207906723
+            },
+            {
+              "id": 104,
+              "label": "wallaby, brush kangaroo",
+              "score": 0.008186365477740765
+            }
+          ],
+          "image": "/demo/images/3c01d7581ae6fcf5e893e1fa3f59584dc2a733213ae8627fb0f391f86028dd52.png"
+        },
+        {
+          "id": "98bb6380f0e94b3fbcfe4e03ebb76847",
+          "artifact": "21b135d7ab6d4cfe2910506a1392da83f3a15a35f9be095007d1b176dbf7639b",
+          "condition": "JPEG",
+          "level": 3,
+          "mass": 0.008589616045355797,
+          "outcome": "confident error",
+          "cached": 0,
+          "transform": {
+            "condition": "JPEG",
+            "level": 3,
+            "pillow": "13.0.0",
+            "pipeline": "rgb768-v1",
+            "seed": 0
+          },
+          "duration_ms": 12.104198,
+          "artifact_sha": "1f01e762a047cde486652af998e8e4bcab1979e60771a85c775c847130d6b919",
+          "predictions": [
+            {
+              "id": 889,
+              "label": "violin, fiddle",
+              "score": 0.9384289383888245
+            },
+            {
+              "id": 48,
+              "label": "Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis",
+              "score": 0.040159959346055984
+            },
+            {
+              "id": 402,
+              "label": "acoustic guitar",
+              "score": 0.008589616045355797
+            },
+            {
+              "id": 615,
+              "label": "knee pad",
+              "score": 0.007588439621031284
+            },
+            {
+              "id": 546,
+              "label": "electric guitar",
+              "score": 0.00292030768468976
+            }
+          ],
+          "image": "/demo/images/1f01e762a047cde486652af998e8e4bcab1979e60771a85c775c847130d6b919.png"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "BASELINE",
+      "evidence_ids": [
+        "9866298bb1d140209bc8eb468ff193ca"
+      ],
+      "budget_remaining": 72
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "RECALLED_FAILURE",
+      "evidence_ids": [
+        "abc8b7c3a68c4e70bcedea85074920c8:9868aead1e600a808ffa39985a758bcd",
+        "8e5b1b8069c74568a21f44aeb29e4b51"
+      ],
+      "budget_remaining": 71
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "5e093b0c7de049ae8eedec359dd78161"
+      ],
+      "budget_remaining": 70
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "621be53720d3448288cdae89fcbe244b"
+      ],
+      "budget_remaining": 69
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "MILD_PROBE",
+      "evidence_ids": [
+        "0c9ace89c8ff4d388997c18f2dc4f46e"
+      ],
+      "budget_remaining": 68
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "LARGEST_LABEL_DROP",
+      "evidence_ids": [
+        "621be53720d3448288cdae89fcbe244b",
+        "621463c1ac174c9eb71603fb84c3e65f"
+      ],
+      "budget_remaining": 67
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "TEST",
+      "reason_code": "LARGEST_LABEL_DROP",
+      "evidence_ids": [
+        "621be53720d3448288cdae89fcbe244b",
+        "98bb6380f0e94b3fbcfe4e03ebb76847"
+      ],
+      "budget_remaining": 66
+    },
+    {
+      "photo_id": "07c4ea9b70ea7b92c29b3d4d3a4d2c43",
+      "action": "REQUEST_RETAKE",
+      "reason_code": "WRONG_TOP1_GE_070",
+      "evidence_ids": [
+        "98bb6380f0e94b3fbcfe4e03ebb76847"
+      ],
+      "budget_remaining": 66
+    }
+  ],
+  "events": [
+    {
+      "provider": "LOCAL/MOCK",
+      "method": "QUERY",
+      "path": "/memory",
+      "status": "ok",
+      "duration_ms": 0.11199000073247589
+    },
+    {
+      "provider": "LOCAL/MOCK",
+      "method": "UPSERT",
+      "path": "/memory",
+      "status": "ok",
+      "duration_ms": 0.048502999561605975
+    }
+  ],
+  "pending_writes": 0,
+  "inference_cpu_ms": 87.588223
+}
